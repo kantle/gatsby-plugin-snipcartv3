@@ -19,7 +19,7 @@ exports.onRenderBody = ({ setPostBodyComponents }, options = {}) => {
 	}
 
 	const components = [
-		<script key='snipcartJs' src={options.js} id="snipcart" data-api-key={options.apiKey} data-autopop={options.autopop}></script>
+		<script key='snipcartJs' src={options.js} id="snipcart" data-api-key={options.apiKey} data-autopop={options.autopop} data-currency={options.currency}></script>
 	]
 	}
 	if (options.styles){
