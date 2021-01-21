@@ -8,7 +8,7 @@ A plugin for using the latest Version v3.0.27 of [Snipcart](https://snipcart.com
 
 ## Install
 
-`npm -i gatsby-plugin-snipcartv3`
+`npm i gatsby-plugin-snipcartv3`
 
 ## Note
 
