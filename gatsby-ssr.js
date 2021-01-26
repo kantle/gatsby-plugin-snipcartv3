@@ -15,8 +15,8 @@ exports.onRenderBody = function (_ref) {
 	options = Object.assign({
 		apiKey: process.env.GATSBY_SNIPCART_API_KEY,
 		autopop: false,
-		js: 'https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js',
-		styles: 'https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css',
+		js: 'https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js',
+		styles: 'https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css',
 	}, options);
 
 	if (!options.apiKey) {
@@ -27,7 +27,7 @@ exports.onRenderBody = function (_ref) {
 		return;
 	}
 
-	var components = [_react2.default.createElement('script', { key: 'snipcartJs', src: options.js, id: 'snipcart', 'data-api-key': options.apiKey, 'data-autopop': options.autopop })];
+	var components = [_react2.default.createElement('script', { key: 'snipcartJs', src: options.js, id: 'snipcart', 'data-config-modal-style': options.modalStyle,'data-api-key': options.apiKey, 'data-autopop': options.autopop })];
 	if (options.styles) {
 		components.push(_react2.default.createElement('link', { key: 'snipcartStyle', href: options.styles, type: 'text/css', rel: 'stylesheet' }));
 	}
